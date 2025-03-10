@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './hello_exec'
+                sh 'invalid_command'  // This will cause an error
             }
         }
         stage('Deploy') {
